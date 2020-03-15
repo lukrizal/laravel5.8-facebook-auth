@@ -13,7 +13,9 @@ class SocialFacebookAccountService
             ->whereProviderUserId($providerUserId)
             ->first();
 
-        $request->session()->put('providerId', $providerUserId);
+        $request->session()->put('avatar', $providerUser->avatar);
+        $request->session()->put('token', $providerUser->token);
+        $request->session()->put('providerUserId', $providerUserId);
 
         if ($account) {
             return $account->user;

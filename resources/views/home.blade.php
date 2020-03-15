@@ -33,7 +33,7 @@
                         <div class="card-header">Dashboard</div>
 
                         <div class="card-body d-flex flex-column align-items-center">
-                            <img class="avatar" src="https://graph.facebook.com/{{ session('providerId') }}/picture?type=large"/>
+                            <img class="avatar" src="{{ session('avatar') }}"/>
                             <strong>{{ auth()->user()->name }}</strong>
                             <small>{{ auth()->user()->email }}</small>
                         </div>
