@@ -35,6 +35,10 @@ Route::get('/facebook/signin', function () {
     return Socialite::driver('facebook')->redirect();
 })->name('facebook.auth');
 
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});
+
 Route::get('/facebook/success', function (SocialFacebookAccountService $service, Request $request) {
     $user = $service->createOrGetUser(Socialite::driver('facebook')->user(), $request);
     auth()->login($user);
