@@ -24,6 +24,7 @@ This repo is a facebook authentication demo using Laravel 5.8 as the backend fra
 
         ```bash
         $ npm install
+        $ npm run production
         ```
 
     * Install backend dependencies
