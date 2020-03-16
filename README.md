@@ -46,6 +46,12 @@ This repo is a facebook authentication demo using Laravel 5.8 as the backend fra
     $ cp .env.example .env
     ```
     *Update required environment variables after you setup your ngrok and facebook app*
+    
+* Generate Application Key
+    
+    ```bash
+    $ php artisan key:generate --ansi
+    ```
 
 * Run your local instance
 
