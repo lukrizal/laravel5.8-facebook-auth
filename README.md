@@ -39,6 +39,13 @@ This repo is a facebook authentication demo using Laravel 5.8 as the backend fra
     $ touch database/database.sqlite
     $ php artisan migrate
     ```
+    
+* Setup Environment file
+
+    ```bash
+    $ cp .env.example .env
+    ```
+    *Update required environment variables after you setup your ngrok and facebook app*
 
 * Run your local instance
 
