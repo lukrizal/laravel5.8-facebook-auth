@@ -36,6 +36,7 @@ This repo is a facebook authentication demo using Laravel 5.8 as the backend fra
 * Do Migration
 
     ```bash
+    $ touch database/database.sqlite
     $ php artisan migrate
     ```
 
